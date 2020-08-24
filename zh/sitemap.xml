@@ -3,44 +3,44 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>www.cosmos547.moe/zh/categories/</loc>
+    <loc>/zh/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.cosmos547.moe/categories/"
+                href="/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="www.cosmos547.moe/zh/categories/"
+                href="/zh/categories/"
                 />
   </url>
   
   <url>
-    <loc>www.cosmos547.moe/zh/tags/</loc>
+    <loc>/zh/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.cosmos547.moe/tags/"
+                href="/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="www.cosmos547.moe/zh/tags/"
+                href="/zh/tags/"
                 />
   </url>
   
   <url>
-    <loc>www.cosmos547.moe/zh/</loc>
+    <loc>/zh/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.cosmos547.moe/"
+                href="/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="www.cosmos547.moe/zh/"
+                href="/zh/"
                 />
   </url>
   

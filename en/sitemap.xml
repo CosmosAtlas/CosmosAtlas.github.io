@@ -3,66 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>www.cosmos547.moe/tags/blog/</loc>
+    <loc>/tags/blog/</loc>
     <lastmod>2020-08-25T00:12:06+08:00</lastmod>
   </url>
   
   <url>
-    <loc>www.cosmos547.moe/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh"
-                href="www.cosmos547.moe/zh/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="www.cosmos547.moe/"
-                />
-  </url>
-  
-  <url>
-    <loc>www.cosmos547.moe/tags/life/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>www.cosmos547.moe/posts/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>www.cosmos547.moe/posts/setting-up-a-new-blog/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>www.cosmos547.moe/tags/</loc>
+    <loc>/</loc>
     <lastmod>2020-08-25T00:12:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="www.cosmos547.moe/zh/tags/"
+                href="/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.cosmos547.moe/tags/"
+                href="/"
                 />
   </url>
   
   <url>
-    <loc>www.cosmos547.moe/categories/</loc>
+    <loc>/tags/life/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/setting-up-a-new-blog/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="www.cosmos547.moe/zh/categories/"
+                href="/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="www.cosmos547.moe/categories/"
+                href="/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="/categories/"
                 />
   </url>
   

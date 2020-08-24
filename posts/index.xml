@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Cosmos Atlas</title>
-    <link>www.cosmos547.moe/posts/</link>
+    <link>/posts/</link>
     <description>Recent content in Posts on Cosmos Atlas</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Wenhan Zhu :: Licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;CC BY-SA 4.0&lt;/a&gt;</copyright>
     <lastBuildDate>Tue, 25 Aug 2020 00:12:06 +0800</lastBuildDate>
     
-	<atom:link href="www.cosmos547.moe/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Setting Up a New Blog</title>
-      <link>www.cosmos547.moe/posts/setting-up-a-new-blog/</link>
+      <link>/posts/setting-up-a-new-blog/</link>
       <pubDate>Tue, 25 Aug 2020 00:12:06 +0800</pubDate>
       
-      <guid>www.cosmos547.moe/posts/setting-up-a-new-blog/</guid>
+      <guid>/posts/setting-up-a-new-blog/</guid>
       <description>Setting Up a New Blog I have long since wanting to set up a personal blog. However, like many things in life, it gets postponed forever. During this week long vocation, I decided to finally set up my personal blog.
 Requirements For my blog project, I&amp;rsquo;ve made the following requirements.
  Portable Posts in plain text Extensible  Portable I want to be able to blog on many devices, from Windows, MacOS to GNU/Linux based operating system.</description>
