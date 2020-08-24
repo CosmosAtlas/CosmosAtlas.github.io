@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Setting Up a New Blog :: Cosmos Atlas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Setting Up a New Blog I have long since wanting to set up a personal blog. However, like many things in life, it gets postponed forever. During this week long vocation, I decided to finally set up my personal blog.
+Requirements For my blog project, I&amp;rsquo;ve made the following requirements.
+ Portable Posts in plain text Extensible  Portable I want to be able to blog on many devices, from Windows, MacOS to GNU/Linux based operating system." />
+<meta name="keywords" content="hugo" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="www.cosmos547.moe/posts/setting-up-a-new-blog/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/www.cosmos547.moe/css/style.min.css">
+
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="www.cosmos547.moe/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="www.cosmos547.moe/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="Wenhan Zhu (Cosmos)" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Setting Up a New Blog :: Cosmos Atlas">
+<meta property="og:description" content="My approach to setting up a blog with Hugo" />
+<meta property="og:url" content="www.cosmos547.moe/posts/setting-up-a-new-blog/" />
+<meta property="og:site_name" content="Setting Up a New Blog" />
+
+  <meta property="og:image" content="www.cosmos547.moe">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-08-25 00:12:06 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Terminal
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="www.cosmos547.moe/about">About</a></li>
+        
+      
+        
+          <li><a href="www.cosmos547.moe/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="www.cosmos547.moe/">English</a></li>
+        
+        <li><a href="www.cosmos547.moe/zh/">中文</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="www.cosmos547.moe/about">About</a></li>
+      
+    
+      
+        <li><a href="www.cosmos547.moe/showcase">Showcase</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="www.cosmos547.moe/">English</a>
+          </li>
+        
+          <li>
+            <a href="www.cosmos547.moe/zh/">中文</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="www.cosmos547.moe/posts/setting-up-a-new-blog/">Setting Up a New Blog</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-08-25 [Updated: 2020-08-25]
+      </span>
+    
+    
+    <span class="post-author">:: Wenhan Zhu (Cosmos)</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="www.cosmos547.moe/tags/blog/">blog</a>&nbsp;
+    
+    #<a href="www.cosmos547.moe/tags/life/">life</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h1 id="setting-up-a-new-blog">Setting Up a New Blog<a href="#setting-up-a-new-blog" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h1>
+<p>I have long since wanting to set up a personal blog. However, like many things
+in life, it gets postponed forever. During this week long vocation, I decided
+to finally set up my personal blog.</p>
+<h2 id="requirements">Requirements<a href="#requirements" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>For my blog project, I&rsquo;ve made the following requirements.</p>
+<ul>
+<li>Portable</li>
+<li>Posts in plain text</li>
+<li>Extensible</li>
+</ul>
+<h3 id="portable">Portable<a href="#portable" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>I want to be able to blog on many devices, from <em>Windows</em>, <em>MacOS</em> to <em>GNU/Linux</em> based operating system. Or in other words, it should be manageable through a <em>git</em> repository and easily deployable either with my own VPS or on platforms such as <em>GitHub Pages</em> or <em>Heroku</em>.</p>
+<h3 id="posts-in-plain-text">Posts in plain text<a href="#posts-in-plain-text" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>Being an open-source enthusiast and command-line lover, it is essential for me that the post files are in plain text. Locking behind a proprietary format or even software is unacceptable. There are many benefit of plain text files, but the biggest one for me is it&rsquo;ll still be the same 100 years from now and even if the software operating on them has been long gone in history, it is still easily to develop new software that works with it nicely.</p>
+<h3 id="extensible">Extensible<a href="#extensible" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It&rsquo;s hard to imagine something out there, be it the blogging infrastructure or available themes perfectly matches my taste and needs. So extensibility of the blogging setup is an important factor. It allows me to fix my itches when needed and always have the open ground for improvement.</p>
+<h2 id="choices-and-decisions">Choices and Decisions<a href="#choices-and-decisions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="choosing-what-to-power-the-blog">Choosing what to power the blog<a href="#choosing-what-to-power-the-blog" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>The first is to decide on what to build the blog with. After some research online, it seems that there are 3 major options for blogging.</p>
+<ul>
+<li>Join a Blogging website (Medium, Blogger etc.)</li>
+<li>Cloud based blogging services (Word Express)</li>
+<li>Static website generators (Hexo, Hugo, Jykell etc.)</li>
+</ul>
+<p>The first two options do not satisfy the portable requirements so it leaves me to static website generators. I&rsquo;ve previously have experience with <em>Jykell</em>, in fact, <em>GitHub</em> is build on <em>Jykell</em> and it integrates nicely with <em>GitHub Pages</em>.</p>
+<p>So I&rsquo;ve decided to try out the following static website generators.</p>
+<ul>
+<li>Hexo &ndash; powered by <em>Nodejs</em></li>
+<li>Pelican &ndash; powered by <em>Python</em></li>
+<li>Hugo &ndash; powered by <em>Go</em></li>
+</ul>
+<p>I&rsquo;ve decided to not to use <em>Jykell</em> since it&rsquo;s based on <em>Ruby</em>. Unfortunately, although I had good experience with <em>Jykell</em>, <em>Ruby</em> as a language have passed it glory days and it&rsquo;s popularity is declining year by year. To be more future proof, I&rsquo;ve decide to look at other static website generators based on more vibrating communities.</p>
+<h4 id="pelican">Pelican<a href="#pelican" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p>I had high hopes for Pelican since it&rsquo;s build on Python and came across some nicely looking blogs based on it. However, the project feels unpolished to the eye. I do believe the code quality and such have no problems, but I don&rsquo;t feel like jumping into the rabbit hole to fully customize my blog.</p>
+<p>Maybe sometime I&rsquo;ll take another look at Pelican. But that&rsquo;ll be some other time&hellip; Maybe I should use Pelican for my knowledge base website, who knows, time will tell. : )</p>
+<h4 id="hexo">Hexo<a href="#hexo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p>Hexo at first glance looks really cool. The concept is cool, the themes library looks amazing. Upon trying to install locally, the problem arises. It took a very long time to install the required <em>node</em> packages and the <code>node_modules</code> folder ends up around 90Mb. I tried some awesome themes like the <em>icarus</em> theme and really liked it. However, every operation just feels slow. Website build time for a few test posts takes a few seconds while both Pelican and Hugo completes almost instantaneously.</p>
+<h4 id="hugo">Hugo<a href="#hugo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h4>
+<p>It leaves us to Hugo then. Hugo feels like a middle ground between Pelican and Hexo. It feels more polish and probably being less customization than Pelican. It&rsquo;s way faster according to some metrics on the web but it&rsquo;s themes and functionality aren&rsquo;t as cool as Hexo. It&rsquo;s expected to be less powerful than Hexo, since nothing is going to be better than something build on the same technology as the web itself&hellip;</p>
+<p>I decided to go with Hugo in the end. It is a nice middle ground between Hexo and Pelican. On top of that, I really enjoy the speed <em>Go</em> provides with Hugo.</p>
+<h3 id="where-the-blog-runs">Where the blog runs<a href="#where-the-blog-runs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>After decided on the tools, now it&rsquo;s time to pick a place to deploy the blog. With static website generators, there are also 3 options to deploy the blog.</p>
+<ul>
+<li>Self-hosting</li>
+<li><em>GitHub/GitLab Pages</em></li>
+<li>Netlify</li>
+</ul>
+<p>Since I plan to run the blog behind <em>git</em> on <em>GitHub</em> anyway, I went with <em>GitHub Pages</em>. I&rsquo;m not against <em>GitLab</em> but just for now I use <em>GitHub</em> more since it provides free pro version for me. If Microsoft ever did something, I&rsquo;ll probably jump ship to <em>GitLab</em> or even on a self-hosted <em>Gitea</em> instance.</p>
+<h2 id="themes">Themes<a href="#themes" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>I&rsquo;ve always like themes based on the terminal. Hugo have a few terminal based themes. After testing them out, I picked <a href="https://github.com/panr/hugo-theme-terminal"><em>hugo-theme-terminal</em></a> and powered the blog base on it.</p>
+<h2 id="customizing">Customizing<a href="#customizing" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<h3 id="setting-up-the-comment-section">Setting up the comment section<a href="#setting-up-the-comment-section" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>I&rsquo;ve always thought setting up a comment section is tough. It either requires using a complex infrastructure like Word Express, or have a complex server to support it. After looking up, it seems like I was over complicating the issue. All I need to do was register a service and paste a few lines of <em>html</em> in the template.</p>
+<p>I found a very interesting project called <code>utteranc.es</code> which is a hack that uses <em>GitHub</em> issues to provide a lightweight comments widget. I followed the guide and quickly set up a fully featured comment section! A good start on customizing my blog.</p>
+<h3 id="copyright-information">Copyright information<a href="#copyright-information" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>It turns out the theme I&rsquo;m using already have this in mind. All I did was copy the CC by-SA 4.0 license info to the configuration file and it renders at the footer nicely.</p>
+<h3 id="dual-language">Dual language<a href="#dual-language" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>I&rsquo;ve seen this in many blogs where the author writes in two or three languages. Since I&rsquo;m native in Chinese, I also want to write blogs in Chinese too. Hugo provides some infrastructure to manage multi language blogging, so that&rsquo;s a good start.</p>
+<p>A simple way to do that is setting up the correct sections in the config file and suffix the posts in language codes. For example, both of the files below are the same post <code>my-first-post</code> but the suffix will tell which language it is written in.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">my-first-post.en.md
+my-first-post.zh.md
+</code></pre></div><p>In the Hugo docs, they highlight the word &ldquo;translation&rdquo;, I&rsquo;m guess it assumes the user to write a same blog post in both languages so one acts as the translation as the other. There are also cool tips on how to automatically show a translated page exists on the blog post. Since I have no plans to write the same blog in multiple languages, I won&rsquo;t apply the tip. If in the future, I find myself with such need, I&rsquo;ll revisit this section.</p>
+<p>The <code>hugo-theme-terminal</code> themes have a language selector built in. However, it seems to be broken. After some investigation, it turns out to be an easy fix. I&rsquo;ve submitted a pull request to fix this issue. I&rsquo;ll update this post base on the result.</p>
+<hr>
+<p>To be continued&hellip;</p>
+
+      </div></div>
+
+  
+  
+  
+
+  <script src="https://utteranc.es/client.js"
+        repo="CosmosAtlas/utterances-comments"
+        issue-term="pathname"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2020 Wenhan Zhu :: Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="/www.cosmos547.moe/js/menu.js"></script>
+<script src="/www.cosmos547.moe/js/prism.js"></script>
+
+
+<script src="/www.cosmos547.moe/js/languageSelector.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+  
+</div>
+
+</body>
+</html>

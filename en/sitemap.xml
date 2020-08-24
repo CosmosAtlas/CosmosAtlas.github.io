@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>www.cosmos547.moe/tags/blog/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/"
+                />
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/tags/life/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/posts/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/posts/setting-up-a-new-blog/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/tags/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/categories/"
+                />
+  </url>
+  
+</urlset>

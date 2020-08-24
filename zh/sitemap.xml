@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>www.cosmos547.moe/zh/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/zh/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>www.cosmos547.moe/zh/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="www.cosmos547.moe/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh"
+                href="www.cosmos547.moe/zh/"
+                />
+  </url>
+  
+</urlset>
