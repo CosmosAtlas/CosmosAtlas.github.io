@@ -13,6 +13,27 @@
     
     
     <item>
+      <title>Showcase</title>
+      <link>/showcase/</link>
+      <pubDate>Wed, 26 Aug 2020 17:54:25 +0800</pubDate>
+      
+      <guid>/showcase/</guid>
+      <description>My dotfiles: https://github.com/CosmosAtlas/dotfiles</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>/about/</link>
+      <pubDate>Wed, 26 Aug 2020 17:45:18 +0800</pubDate>
+      
+      <guid>/about/</guid>
+      <description>My name is Wenhan Zhu (朱文瀚) and I go by my gaming nickname Cosmos (from CosmosAtlas). You might also notice this blog is called cosmos atlas.
+I&amp;rsquo;m a PhD Student in Computer Science at the University of Waterloo. My research interest is in software ecosystems.
+This blog contains my rants, thoughts and experiences.
+You can also find me at: cosmos(dot)zhu(at)uwaterloo(dot)ca</description>
+    </item>
+    
+    <item>
       <title>Hugo With Asciidoc</title>
       <link>/posts/hugo-with-asciidoc/</link>
       <pubDate>Wed, 26 Aug 2020 16:00:44 +0800</pubDate>
