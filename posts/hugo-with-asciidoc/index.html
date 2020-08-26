@@ -23,7 +23,7 @@ Markdown by design, is most suited for writing normal text with easy conversions
 
 
 
-
+<link rel="stylesheet" href="/style.css">
 
 
 <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
@@ -192,7 +192,7 @@ Markdown by design, is most suited for writing normal text with easy conversions
 <section class="doc-section level-1"><h2 id="_improvements_for_better_asciidoc_rendering">Improvements for better asciidoc rendering<a href="#_improvements_for_better_asciidoc_rendering" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2><p>Just like most things in the tech world, this problem prabably have being already thought though by someone. Inspired by the following two blog posts, here are some modifications I made to improve my hugo blogging with asciidoc.</p>
 <div class="ulist"><ul><li><a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></li><li><a href="https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/">Blogging with Asciidoctor and Hugo</a></li></ul></div>
 <section class="doc-section level-2"><h3 id="_html_output_from_asciidoctor">HTML output from <em>asciidoctor</em><a href="#_html_output_from_asciidoctor" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>The default <em>asciidoctor</em> HTML output is not ideal in many situations. Most importantly it&#8217;s not semantic so it&#8217;s hard to parse by person. (Meanwhile why would you?) An extension in <em>gem</em> for <em>asciidoctor</em> called <code>asciidoctor-html5s</code> fixes this issue. So calling <em>asciidoctor</em> with the correct argument would provide you with better HTML outputs.</p>
-<div class="literal-block"><pre>asciidoctor -r asciidoctor-html5s -b html5s example.adoc</pre></div>
+<div class="listing-block"><pre class="highlight"><code class="language-sh" data-lang="sh">asciidoctor -r asciidoctor-html5s -b html5s example.adoc</code></pre></div>
 <p>However, there&#8217;s a catch to Hugo. Hugo hardcodes calling <em>asciidoctor</em> with fixed arguments in its source code. Modifying the source code definitely fix it, but on <em>*NIX</em> systems you can overrite the <code>asciidoctor</code> command with the arguments built in.</p>
 <p>One way to do it is to save a file called <code>asciidoctor</code> at the root of the Hugo directory</p>
 <div class="listing-block"><pre class="highlight"><code class="language-bash" data-lang="bash">#!/bin/sh
@@ -200,10 +200,10 @@ Markdown by design, is most suited for writing normal text with easy conversions
 <p>replace <code>/usr/bin/asciidoctor</code> to where your <code>asciidoctor</code> bin file is located on your system</p>
 <aside class="admonition-block note" role="note"><h6 class="block-title label-only"><span class="title-label">Note: </span></h6><p>Remember to make the file executable by <code>chmod +x ./asciidoctor</code></p></aside>
 <p>Then execute Hugo with</p>
-<div class="literal-block"><pre>PATH=$PWD:$PATH hugo server -D</pre></div>
+<div class="listing-block"><pre class="highlight"><code class="language-sh" data-lang="sh">PATH=$PWD:$PATH hugo server -D</code></pre></div>
 <p>So Hugo will use our own customized version.</p></section>
 <section class="doc-section level-2"><h3 id="_better_admonitions">Better admonitions<a href="#_better_admonitions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>If you previewed your asciidoc file before and after using the <code>asciioctor-html5s</code> extension. You&#8217;ll notice the admonition have changed. Before it looks like a 1x2 table (I believe that how <em>GitHub</em> 'translates' admonitions) with the admonition text on the left and the content on the right. Now it just look like a header followed by a paragraph. This is definitely not ideal. We need to fix that.</p>
-<p>fix-admonition.js</p>
+<p>Credit: <a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></p>
 <div class="listing-block"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// replace the default admonitions block with one that looks like the antora output to apply similar styling via adoc.css
 window.addEventListener('load', function () {
   const admonitions = document.getElementsByClassName('admonition-block')
@@ -232,7 +232,6 @@ window.addEventListener('load', function () {
     parent.replaceChild(input, elm)
   }
 })</code></pre></div>
-<p>Credit: <a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></p>
 <p>Now we get our admonitions behave like before.</p></section>
 <section class="doc-section level-2"><h3 id="_verdict">Verdict<a href="#_verdict" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>You&#8217;ll probably noticed by now, this blog post have some <em>none markdown</em> features such as the admonition block earlier. In fact, this blog is written in asciidoc and I&#8217;ve tweaked my Hugo config files with the fixes above and adjusted some aesthetics.</p>
 <p>So what are my final thoughts on using asciidoc? After some experimenting with asciidoc rendering with Hugo and applying changes and fixes found around the web. I came to the realization that in order to have nicely lookly asciidoc HTML rendered by Hugo, I&#8217;ll need to write a long <em>css</em> file to customize the hell out of it.</p>
