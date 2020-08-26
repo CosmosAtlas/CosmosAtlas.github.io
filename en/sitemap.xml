@@ -3,13 +3,23 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tags/asciidoc/</loc>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/asciidoctor/</loc>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/blog/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -23,23 +33,23 @@
   </url>
   
   <url>
-    <loc>/tags/life/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <loc>/tags/hugo/</loc>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/hugo-with-asciidoc/</loc>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>/posts/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/posts/setting-up-a-new-blog/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+    <lastmod>2020-08-26T16:00:44+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -50,6 +60,20 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>/tags/life/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/setting-up-a-new-blog/</loc>
+    <lastmod>2020-08-25T00:12:06+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/asciidoc-test/</loc>
   </url>
   
   <url>

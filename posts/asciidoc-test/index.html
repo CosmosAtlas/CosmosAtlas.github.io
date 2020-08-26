@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title> :: Cosmos Atlas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="This is a demonstration of Asciidoctor. And this is the preamble of this document.
+ Purpose This document exercises many of the features of AsciiDoc to test the Asciidoctor implementation.
+     Tip  If you want the output to look familiar, copy (or link) the AsciiDoc stylesheet, asciidoc.css, to the output directory.       Note  Items marked with TODO are either not yet supported or work in progress." />
+<meta name="keywords" content="blog, tech" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/asciidoc-test/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content=" :: Cosmos Atlas">
+<meta property="og:description" content="This is a demonstration of Asciidoctor. And this is the preamble of this document.
+ Purpose This document exercises many of the features of AsciiDoc to test the Asciidoctor implementation.
+     Tip  If you want the output to look familiar, copy (or link) the AsciiDoc stylesheet, asciidoc.css, to the output directory.       Note  Items marked with TODO are either not yet supported or work in progress." />
+<meta property="og:url" content="/posts/asciidoc-test/" />
+<meta property="og:site_name" content="" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cosmos Atlas
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/zh/">中文</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/zh/">中文</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/asciidoc-test/"></a></h1>
+  <div class="post-meta">
+    
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>This is a demonstration of Asciidoctor. And this is the preamble of this document.</p>
+</div>
+<div id="purpose" class="sidebarblock">
+<div class="content">
+<div class="title">Purpose</div>
+<div class="paragraph">
+<p>This document exercises many of the features of AsciiDoc to test the Asciidoctor implementation.</p>
+</div>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+If you want the output to look familiar, copy (or link) the AsciiDoc stylesheet, asciidoc.css, to the output directory.
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+Items marked with TODO are either not yet supported or work in progress.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="first">First steps<a href="#first" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="ulist">
+<div class="title">Inline markup</div>
+<ul>
+<li>
+<p>single quotes around a phrase place <em>emphasis</em></p>
+</li>
+<li>
+<p>astericks around a phrase make the text <strong>bold</strong></p>
+</li>
+<li>
+<p>double astericks around one or more <strong>l</strong>etters in a word make those letters bold</p>
+</li>
+<li>
+<p>double underscore around a <em>sub</em>string in a word emphasize that substring.</p>
+</li>
+</ul>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>escape characters are supported</p>
+<div class="ulist">
+<ul>
+<li>
+<p>for instance, you can escape a quote inside emphasized text like <em>Here's Johnny!</em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>you can safely use reserved XML characters like &lt;, &gt; and &amp;, which are escaped when rendering</p>
+</li>
+<li>
+<p>force a space between inline elements using the {sp} attribute</p>
+</li>
+<li>
+<p>hold text together with an intrinsic non-breaking&#160;space attribute, {nbsp}</p>
+</li>
+<li>
+<p>handle words with unicode characters like in the name Gregory Romé.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>You can write text <a href="http://example.com">with inline links</a>, optionally using an explicit <a href="http://example.com">link prefix</a>. In either case, the link can have a <a href="http://example.com?foo=bar&amp;lang=en">query string</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you want to break a line<br>
+just end it in a &#43; sign<br>
+and continue typing on the next line.</p>
+</div>
+<div class="ulist">
+<div class="title">Adjacent lists</div>
+<ul>
+<li>
+<p>this list</p>
+</li>
+<li>
+<p>should join</p>
+</li>
+<li>
+<p>to have</p>
+</li>
+<li>
+<p>four items</p>
+</li>
+</ul>
+</div>
+<div class="olist arabic">
+<div class="title">Numbered lists (TODO)</div>
+<ol class="arabic">
+<li>
+<p>These items</p>
+</li>
+<li>
+<p>will be auto-numbered</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>and can be nested</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>A numbered list can nest</p>
+<div class="ulist">
+<ul>
+<li>
+<p>unordered</p>
+</li>
+<li>
+<p>list</p>
+</li>
+<li>
+<p>items</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<div class="title">Statement</div>
+<p>I swear I left it in <em>Guy's</em> car. Let's go look for it.</p>
+</div>
+<div id="defs" class="dlist">
+<dl>
+<dt class="hdlist1">term</dt>
+<dd>
+<p>definition</p>
+</dd>
+<dt class="hdlist1"><a id="another_term"></a>another term</dt>
+<dd>
+<p>another definition, which can be literal (indented) or regular paragraph</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>This should be a standalone paragraph, not grabbed by the definition list.</p>
+</div>
+<div id="nested" class="ulist">
+<ul>
+<li>
+<p>first level
+written on two lines</p>
+</li>
+<li>
+<p>first level</p>
+<div class="literalblock">
+<div class="content">
+<pre>with this literal text</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>second level</p>
+<div class="ulist">
+<ul>
+<li>
+<p>third level</p>
+<div class="ulist">
+<ul>
+<li>
+<p>fourth level (TODO)</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>back to<br>
+first level</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Let&#8217;s make a horizontal rule&#8230;&#8203;</p>
+</div>
+<hr>
+<div class="paragraph">
+<p>then take a break.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="were_back">We&#8217;re back!<a href="#were_back" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Want to see a <span class="image"><img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=2000&amp;q=80" alt="Tiger"></span>? (TODO)</p>
+</div>
+<div class="paragraph">
+<p>Do you feel more safe with the tiger in a box?</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" alt="photo 1561731216 c3a4d99437d5?ixlib=rb 1.2">
+</div>
+<div class="title">Figure 1. Tiger in a box</div>
+</div>
+<div class="listingblock">
+<div class="title">Asciidoctor usage example, should contain 3 lines (TODO)</div>
+<div class="content">
+<pre class="highlight"><code class="language-ruby" data-lang="ruby">doc = Asciidoctor::Document.new("*This* is it!", :header_footer =&gt; false)
+
+puts doc.render</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what it outputs (using the built-in templates):</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>&lt;div class='paragraph'&gt;
+  &lt;p&gt;&lt;strong&gt;This&lt;/strong&gt; is it!&lt;/p&gt;
+&lt;/div&gt;</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s what code annotation looks like</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public static void main( String args[] ) {
+    System.out.println("Foobar!"); <b class="conum">(1)</b>
+}</code></pre>
+</div>
+</div>
+<div class="colist arabic">
+<ol>
+<li>
+<p>Print something</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="quotes">Quotes<a href="#quotes" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>AsciiDoc is so powerful!</p>
+</div>
+</blockquote>
+</div>
+<div class="paragraph">
+<p>This verse comes to mind.</p>
+</div>
+<div class="verseblock">
+<pre class="content">La la la</pre>
+</div>
+<div class="paragraph">
+<p>Here&#8217;s another quote:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p>When you have eliminated all which is impossible, then whatever remains, however improbable, must be the truth.</p>
+</div>
+</blockquote>
+<div class="attribution">
+&#8212; Sir Arthur Conan Doyle<br>
+<cite>The Adventures of Sherlock Holmes</cite>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="getting_literal">Getting Literal<a href="#getting_literal" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>Want to get literal? Just prefix a line with a space (just one will do).</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>I'll join that party, too.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>first rule (yeah!)</p>
+</li>
+<li>
+<p>second rule, looking <code>so mono</code></p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="wrapup">Wrap-up<a href="#wrapup" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+AsciiDoc is quite cool, you should try it!
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Tip</div>
+</td>
+<td class="content">
+<div class="title">AsciiDoc info</div>
+<div class="paragraph">
+<p>Go to this URL to learn more about it:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="http://asciidoc.org" class="bare">http://asciidoc.org</a></p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+One more thing. Happy documenting!
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/posts/setting-up-a-new-blog/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Setting Up a New Blog</span>
+            </a>
+        </span>
+        
+        
+    </div>
+</div>
+
+  
+
+  <script src="https://utteranc.es/client.js"
+        repo="CosmosAtlas/utterances-comments"
+        issue-term="pathname"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2020 Wenhan Zhu :: Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="/js/menu.js"></script>
+<script src="/js/prism.js"></script>
+
+
+<script src="/js/languageSelector.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+<script src="/js/app.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>

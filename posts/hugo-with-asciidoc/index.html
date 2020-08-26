@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Hugo With Asciidoc :: Cosmos Atlas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Why Asciidoc? Asciidoc is an alternative plain text document format to Markdown. At the every basic level, it provides much more concise control to the document and is more suited for technical writing especially for software documentation.
+ Markdown by design, is most suited for writing normal text with easy conversions to HTML. The original markdown specs is vague and not concise. Many flavors of markdown is extended upon the original markdown syntax." />
+<meta name="keywords" content="hugo, asciidoc, asciidoctor" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/hugo-with-asciidoc/" />
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="Wenhan Zhu (Cosmos)" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Hugo With Asciidoc :: Cosmos Atlas">
+<meta property="og:description" content="Experimenting Hugo with asciidoc" />
+<meta property="og:url" content="/posts/hugo-with-asciidoc/" />
+<meta property="og:site_name" content="Hugo With Asciidoc" />
+
+  <meta property="og:image" content="/">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-08-26 16:00:44 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cosmos Atlas
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/zh/">中文</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/zh/">中文</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/hugo-with-asciidoc/">Hugo With Asciidoc</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-08-26 [Updated: 2020-08-26]
+      </span>
+    
+    
+    <span class="post-author">:: Wenhan Zhu (Cosmos)</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/hugo/">hugo</a>&nbsp;
+    
+    #<a href="/tags/asciidoc/">asciidoc</a>&nbsp;
+    
+    #<a href="/tags/asciidoctor/">asciidoctor</a>&nbsp;
+    
+    #<a href="/tags/blog/">blog</a>&nbsp;
+    
+  </span>
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <div class="sect1">
+<h2 id="_why_asciidoc">Why Asciidoc?<a href="#_why_asciidoc" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://asciidoc.org/">Asciidoc</a> is an alternative plain text document format to Markdown. At the every basic level, it provides much more concise control to the document and is more suited for technical writing especially for software documentation.</p>
+</div>
+<div class="paragraph">
+<p>Markdown by design, is most suited for writing normal text with easy conversions to HTML. The <a href="https://daringfireball.net/projects/markdown/">original markdown</a> specs is vague and not concise. Many flavors of markdown is extended upon the original markdown syntax.</p>
+</div>
+<div class="paragraph">
+<p>Some markdown flavors</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GitHub Flavored Markdown (GFM)&#8201;&#8212;&#8201;probably the most popular among programmers due to <em>GitHub</em></p>
+</li>
+<li>
+<p>CommonMark&#8201;&#8212;&#8201;An extension with many features</p>
+</li>
+<li>
+<p>Pandoc&#8201;&#8212;&#8201;markdown with many extra features to work with the Pandoc document converter</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>With so many different flavors and variations between different markdown flavors, although being probably the most popular markup language for the web, you can end up with situations where you wish to use a feature that&#8217;s supported by one flavor but not available in the flavor that you have to use. For example, Stack Overflow&#8217;s version of markdown do not support tables extension while most other flavors supports them.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_asciidoc_in_hugo">Asciidoc in Hugo<a href="#_asciidoc_in_hugo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Hugo&#8217;s supports a variety of content formats out of the box. Different content format rely on different backends. As long as the backend exists on the system, Hugo will do the work automatically. Asciidoc support is done by the package <em>asciidoctor</em> from <em>gem</em>. Not to confuse with the <em>asciidoc</em> package which is planed to be deprecated at the end of 2020 and completely take over by <em>asciidoctor</em>.</p>
+</div>
+<div class="paragraph">
+<p>So, how does the support work out of the box? The quick answer is <em>it kind of works</em>. You get something very similar to <em>GitHub</em>'s asciidoc preview and nothing really breaks. The biggest draw back is it doesn&#8217;t have the <em>css</em> setup like what you would get from the default <em>asciidoctor</em> output.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_improvements_for_better_asciidoc_rendering">Improvements for better asciidoc rendering<a href="#_improvements_for_better_asciidoc_rendering" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Just like most things in the tech world, this problem prabably have being already thought though by someone. Inspired by the following two blog posts, here are some modifications I made to improve my hugo blogging with asciidoc.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></p>
+</li>
+<li>
+<p><a href="https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/">Blogging with Asciidoctor and Hugo</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_html_output_from_asciidoctor">HTML output from <em>asciidoctor</em><a href="#_html_output_from_asciidoctor" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<div class="paragraph">
+<p>The default <em>asciidoctor</em> HTML output is not ideal in many situations. Most importantly it&#8217;s not semantic so it&#8217;s hard to parse by person. (Meanwhile why would you?) An extension in <em>gem</em> for <em>asciidoctor</em> called <code>asciidoctor-html5s</code> fixes this issue. So calling <em>asciidoctor</em> with the correct argument would provide you with better HTML outputs.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>asciidoctor -r asciidoctor-html5s -b html5s example.adoc</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, there&#8217;s a catch to Hugo. Hugo hardcodes calling <em>asciidoctor</em> with fixed arguments in its source code. Modifying the source code definitely fix it, but on <em>*NIX</em> systems you can overrite the <code>asciidoctor</code> command with the arguments built in.</p>
+</div>
+<div class="paragraph">
+<p>One way to do it is to save a file called <code>asciidoctor</code> at the root of the Hugo directory</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-bash" data-lang="bash">#!/bin/sh
+/usr/bin/asciidoctor -r asciidoctor-html5s -b html5s "$@"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>replace <code>/usr/bin/asciidoctor</code> to where your <code>asciidoctor</code> bin file is located on your system</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Remember to make the file executable by <code>chmod +x ./asciidoctor</code></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Then execute Hugo with</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>PATH=$PWD:$PATH hugo server -D</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>So Hugo will use our own customized version.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_better_admonitions">Better admonitions<a href="#_better_admonitions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<div class="paragraph">
+<p>If you previewed your asciidoc file before and after using the <code>asciioctor-html5s</code> extension. You&#8217;ll notice the admonition have changed. Before it looks like a 1x2 table (I believe that how <em>GitHub</em> 'translates' admonitions) with the admonition text on the left and the content on the right. Now it just look like a header followed by a paragraph. This is definitely not ideal. We need to fix that.</p>
+</div>
+<div class="paragraph">
+<p>fix-admonition.js</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">// replace the default admonitions block with one that looks like the antora output to apply similar styling via adoc.css
+window.addEventListener('load', function () {
+  const admonitions = document.getElementsByClassName('admonition-block')
+  for (let i = admonitions.length - 1; i &gt;= 0; i--) {
+    const elm = admonitions[i]
+    const type = elm.classList[1]
+    const text = elm.getElementsByTagName('p')[0].innerHTML
+    const parent = elm.parentNode
+    const tempDiv = document.createElement('div')
+    tempDiv.innerHTML = `&lt;div class="admonitionblock ${type}"&gt;
+    &lt;table&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td class="icon"&gt;
+            &lt;i class="fa icon-${type}" title="${type}"&gt;&lt;/i&gt;
+          &lt;/td&gt;
+          &lt;td class="content"&gt;
+            ${text}
+          &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/div&gt;`
+
+    const input = tempDiv.childNodes[0]
+    parent.replaceChild(input, elm)
+  }
+})</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Credit: <a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></p>
+</div>
+<div class="paragraph">
+<p>Now we get our admonitions behave like before.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_verdict">Verdict<a href="#_verdict" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<div class="paragraph">
+<p>You&#8217;ll probably noticed by now, this blog post have some <em>none markdown</em> features such as the admonition block earlier. In fact, this blog is written in asciidoc and I&#8217;ve tweaked my Hugo config files with the fixes above and adjusted some aesthetics.</p>
+</div>
+<div class="paragraph">
+<p>So what are my final thoughts on using asciidoc? After some experimenting with asciidoc rendering with Hugo and applying changes and fixes found around the web. I came to the realization that in order to have nicely lookly asciidoc HTML rendered by Hugo, I&#8217;ll need to write a long <em>css</em> file to customize the hell out of it.</p>
+</div>
+<div class="paragraph">
+<p>Someone have already created a theme for Hugo that is intended to support asciidoc nicely.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://github.com/foo-dogsquared/hugo-theme-arch-terminal">hugo-theme-arch-terminal</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For me afterall, I think I&#8217;ll stick with markdown for writing my blog at the moment. Maybe one day I&#8217;ll be interested in designing my own blogging theme, by then I&#8217;ll reconsider using asciidoc to write my blog.</p>
+</div>
+</div>
+</div>
+</div>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/setting-up-a-new-blog/">
+                <span class="button__text">Setting Up a New Blog</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  <script src="https://utteranc.es/client.js"
+        repo="CosmosAtlas/utterances-comments"
+        issue-term="pathname"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2020 Wenhan Zhu :: Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="/js/menu.js"></script>
+<script src="/js/prism.js"></script>
+
+
+<script src="/js/languageSelector.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+<script src="/js/app.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>
