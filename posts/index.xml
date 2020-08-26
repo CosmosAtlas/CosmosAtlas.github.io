@@ -18,8 +18,8 @@
       <pubDate>Wed, 26 Aug 2020 16:00:44 +0800</pubDate>
       
       <guid>/posts/hugo-with-asciidoc/</guid>
-      <description>Why Asciidoc? Asciidoc is an alternative plain text document format to Markdown. At the every basic level, it provides much more concise control to the document and is more suited for technical writing especially for software documentation.
- Markdown by design, is most suited for writing normal text with easy conversions to HTML. The original markdown specs is vague and not concise. Many flavors of markdown is extended upon the original markdown syntax.</description>
+      <description>Why Asciidoc?Asciidoc is an alternative plain text document format to Markdown. At the every basic level, it provides much more concise control to the document and is more suited for technical writing especially for software documentation.
+Markdown by design, is most suited for writing normal text with easy conversions to HTML. The original markdown specs is vague and not concise. Many flavors of markdown is extended upon the original markdown syntax.</description>
     </item>
     
     <item>
