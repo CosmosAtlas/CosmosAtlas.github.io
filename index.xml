@@ -33,16 +33,5 @@ Requirements For my blog project, I&amp;rsquo;ve made the following requirements
  Portable Posts in plain text Extensible  Portable I want to be able to blog on many devices, from Windows, MacOS to GNU/Linux based operating system.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>/posts/asciidoc-test/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/asciidoc-test/</guid>
-      <description>This is a demonstration of Asciidoctor. And this is the preamble of this document.
- Purpose This document exercises many of the features of AsciiDoc to test the Asciidoctor implementation.
-     Tip  If you want the output to look familiar, copy (or link) the AsciiDoc stylesheet, asciidoc.css, to the output directory.       Note  Items marked with TODO are either not yet supported or work in progress.</description>
-    </item>
-    
   </channel>
 </rss>

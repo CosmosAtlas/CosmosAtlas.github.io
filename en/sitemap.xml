@@ -73,10 +73,6 @@
   </url>
   
   <url>
-    <loc>/posts/asciidoc-test/</loc>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
