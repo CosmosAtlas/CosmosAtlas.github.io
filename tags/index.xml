@@ -7,10 +7,55 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© 2020 Wenhan Zhu :: Licensed under &lt;a href=&#34;https://creativecommons.org/licenses/by-sa/4.0/&#34;&gt;CC BY-SA 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Wed, 26 Aug 2020 16:00:44 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2020 20:21:29 +0800</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>base16</title>
+      <link>/tags/base16/</link>
+      <pubDate>Thu, 10 Sep 2020 20:21:29 +0800</pubDate>
+      
+      <guid>/tags/base16/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>colorscheme</title>
+      <link>/tags/colorscheme/</link>
+      <pubDate>Thu, 10 Sep 2020 20:21:29 +0800</pubDate>
+      
+      <guid>/tags/colorscheme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>danqing</title>
+      <link>/tags/danqing/</link>
+      <pubDate>Thu, 10 Sep 2020 20:21:29 +0800</pubDate>
+      
+      <guid>/tags/danqing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Thu, 10 Sep 2020 20:21:29 +0800</pubDate>
+      
+      <guid>/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vim</title>
+      <link>/tags/vim/</link>
+      <pubDate>Thu, 10 Sep 2020 20:21:29 +0800</pubDate>
+      
+      <guid>/tags/vim/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>asciidoc</title>

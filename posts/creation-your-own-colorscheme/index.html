@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Creation Your Own Colorscheme :: Cosmos Atlas</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Modern text editors will highlight syntax when you are programming. As of everything that is customization, many different colorschemes exists to highlight syntax one way or another. The same idea can also apply to anything with color. In my daily life, that translates to the color of by window manager, and my terminal applications.
+Past favorite Most people start by using the default colorscheme that came with your text editor or the terminal." />
+<meta name="keywords" content="vim, colorscheme" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/posts/creation-your-own-colorscheme/" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-176420785-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+<link rel="stylesheet" href="/style.css">
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="Wenhan Zhu (Cosmos)" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Creation Your Own Colorscheme :: Cosmos Atlas">
+<meta property="og:description" content="How to build your own colorscheme with base16" />
+<meta property="og:url" content="/posts/creation-your-own-colorscheme/" />
+<meta property="og:site_name" content="Creation Your Own Colorscheme" />
+
+  <meta property="og:image" content="/images/danqing-palette.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-09-10 20:21:29 &#43;0800 CST" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="orange">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Cosmos Atlas
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/showcase">Showcase</a></li>
+        
+      
+      
+    
+
+    
+    <div class="spacer"></div>
+    <ul class="language-selector">
+      <ul class="language-selector-current">
+          <li>English ▾</li>
+      </ul>
+      <ul class="language-selector__more hidden">
+        
+        <li><a href="/">English</a></li>
+        
+        <li><a href="/zh/">中文</a></li>
+        
+      </ul>
+    </ul>
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/showcase">Showcase</a></li>
+      
+    
+    
+    <hr />
+        
+          <li>
+            <a href="/">English</a>
+          </li>
+        
+          <li>
+            <a href="/zh/">中文</a>
+          </li>
+        
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/posts/creation-your-own-colorscheme/">Creation Your Own Colorscheme</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-09-10 [Updated: 2020-09-10]
+      </span>
+    
+    
+    <span class="post-author">:: Wenhan Zhu (Cosmos)</span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/colorscheme/">colorscheme</a>&nbsp;
+    
+    #<a href="/tags/vim/">vim</a>&nbsp;
+    
+    #<a href="/tags/linux/">linux</a>&nbsp;
+    
+    #<a href="/tags/base16/">base16</a>&nbsp;
+    
+    #<a href="/tags/danqing/">danqing</a>&nbsp;
+    
+  </span>
+  
+
+  
+    <img src="/images/danqing-palette.png" class="post-cover" alt="Creation Your Own Colorscheme" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>Modern text editors will highlight syntax when you are programming. As of
+everything that is customization, many different colorschemes exists to
+highlight syntax one way or another. The same idea can also apply to anything
+with color. In my daily life, that translates to the color of by window manager,
+and my terminal applications.</p>
+<h2 id="past-favorite">Past favorite<a href="#past-favorite" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Most people start by using the default colorscheme that came with your text
+editor or the terminal. Then you discover the default options and changed to one
+you like. For example, the <a href="https://ethanschoonover.com/solarized/">solarized
+colorscheme</a> is probably what everyone
+have tried once. Personally I&rsquo;m not a fan, but it is a thoughfully designed
+colorscheme and understand why many people love it.</p>
+<p><img src="https://github.com/altercation/solarized/raw/master/img/solarized-dualmode.png" alt="Solarized Colorscheme"></p>
+<p><a href="https://github.com/morhetz/gruvbox">Gruvbox</a> is a popular colorscheme that have
+a yellowish tone to it. I&rsquo;ve used this colorscheme for a long time and am really
+satisfied with it.</p>
+<p><img src="https://camo.githubusercontent.com/2fcf604967167347f15ca8be125d32b18db9bc28/687474703a2f2f692e696d6775722e636f6d2f476b496c38466e2e706e67" alt="Gruvbox Dark"></p>
+<p><a href="https://github.com/arcticicestudio/nord">Nord</a> is an arctic, north-bluish color
+scheme that became really popular in the recent years. One advantage of nord is
+it has been ported to many applications. So if you want to have your nord
+colorscheme on some software, there&rsquo;s probably already someone that have done
+that.</p>
+<p><img src="https://raw.githubusercontent.com/arcticicestudio/nord-docs/develop/assets/images/ports/vim/overview-go.png" alt="Nord"></p>
+<h2 id="why-build-your-own">Why build your own<a href="#why-build-your-own" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Although there already exists many beautiful colorschemes out there, sometimes
+it just feels a bit off. Creating your own colorscheme solves this issue. But
+creating a colorscheme you like takes some effort.</p>
+<p>Due to the complexity of colors in terminal and how sometimes you wish the color
+for a specific element is different, I started to add some tweaks to the
+colorschemes. For example, I&rsquo;ll remove the background color in <em>vim</em> so
+transparency works as expected. When doing these edits, I started to wonder if I
+can create a colorscheme that&rsquo;s really my own.</p>
+<p>I started looking around on how to create a colorscheme. I&rsquo;ve came across a
+wonderful guide by <em>cocopon</em>: <a href="https://speakerdeck.com/cocopon/creating-your-lovely-color-scheme"><em>Creating Your Lovely Color
+Scheme</em></a>. I
+would suggest you to give it a read, trust me, it&rsquo;s worth your time if you&rsquo;re
+interested in colorschemes.</p>
+<h2 id="inspirations-and-color-picks">Inspirations and color picks<a href="#inspirations-and-color-picks" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Following <em>cocopon</em>&rsquo;s slides, the first thing is to decide a theme. I&rsquo;ve decided
+to base on traditional chinese colors. These are colors used in China for
+traditional chinese paintings. People back in the days rely on natural
+ingredients to create paint, so the colors will have a unique taste to them.</p>
+<h3 id="丹青-danqing">丹青 (DanQing)<a href="#丹青-danqing" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3>
+<p>I decide to name my colorscheme danqing (丹青) which is a pronoun for Chinese
+painting in Pinyin.</p>
+<p>I used a website online to find traditional Chinese colors</p>
+<ul>
+<li><a href="http://ylbook.com/cms/web/chuantongsecai/chuantongsecai.htm"><em>Chinese Traditional
+Colors</em></a></li>
+</ul>
+<p>The first thing is to decide on a shade of colors representing from the darkest
+to lightest. I picked the chinese color 素 (which stands for raw color, e.g.,
+the color of the <a href="https://en.wikipedia.org/wiki/Xuan_paper">Xuan paper</a> used for
+Chinese writing and paintings) and used the <a href="https://maketintsandshades.com/">tint and shade
+generator</a> to form the shade of colors from
+dark to light.</p>
+<p>Due to historical reasons, most colorschemes are based of 16 colors. This was a
+limit for terminal color display limitations back in the days. Now 256 colors
+and even 24bit full colors are supported by most terminals. However, the 16
+colors is a good starting point to build the colors.</p>
+<p>The first 8 colors will be the shade from dark to light. Which I already
+generated previously.</p>
+<p>Next, 8 more colors will have to be chosen. There are 6 conventional colors in
+terminal besides white and black which are covered by our shade.</p>
+<ul>
+<li>Red</li>
+<li>Green</li>
+<li>Yellow</li>
+<li>Blue</li>
+<li>Magenta</li>
+<li>Cyan</li>
+</ul>
+<p>And this gives us 2 more free colors.</p>
+<p>I&rsquo;ve used the colors website mentioned previously to find colors matching the 6
+conventional colors that I like and tweaked them (a loooot of tweaking&hellip;) until
+they look nature. For the additional 2 colors, I used a dark orange and dark
+brown color.</p>
+<h2 id="building-your-own-colorscheme-----the-easy-way">Building your own colorscheme &mdash; the easy way<a href="#building-your-own-colorscheme-----the-easy-way" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p><a href="https://github.com/chriskempson/base16">Base16</a> is an architecture for building
+color themes based on 16 chosen colors. It is composed of 3 parts.</p>
+<ul>
+<li>Builder</li>
+<li>Template</li>
+<li>Scheme</li>
+</ul>
+<p>Where the schemes are the actual colorschemes, the template stores the
+information of how to convert a colorscheme into the format of a specfic
+application. For example there is the <em>vim</em> template for building <em>vim</em>
+colorschemes. Builder is the tool to actually perform the action of building the
+colorschme based on the scheme and template.</p>
+<p>I stored the danqing colorscheme and build it for <em>vim</em> and <em>Xresources</em> using
+the <a href="https://github.com/base16-builder/base16-builder">base16-builder</a>.</p>
+<p><img src="/images/danqing-example.png" alt="danqing in action"></p>
+<p>I&rsquo;m quite satisfied with the result and I have my own colorscheme!</p>
+<p>Of course this colorscheme is not perfect. For example, the base16 <em>vim</em>
+template is no where near as powerful as the full fledged Gruvbox <em>vim</em>
+colorscheme. However, for me it&rsquo;s enough.</p>
+<h2 id="conclusion">Conclusion<a href="#conclusion" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>If you&rsquo;re not satisfied with your existing colorscheme, or you want to scratch
+your itch and create your own colorscheme, consider giving base16 a try. All you
+need is a shade color to generate 8 colors from dark to light (or light to dark
+if you want to have a light color scheme) and pick 8 other colors for
+highlights. Combining that with experiments and tweakings until it fits your
+likings.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/posts/hugo-with-asciidoc/">
+                <span class="button__text">Hugo With Asciidoc</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  <script src="https://utteranc.es/client.js"
+        repo="CosmosAtlas/utterances-comments"
+        issue-term="pathname"
+        theme="photon-dark"
+        crossorigin="anonymous"
+        async>
+</script>
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright copyright--user">
+        <span>© 2020 Wenhan Zhu :: Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script src="/js/menu.js"></script>
+<script src="/js/prism.js"></script>
+
+
+<script src="/js/languageSelector.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" integrity="sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+
+
+<script src="/js/app.js"></script>
+
+
+  
+</div>
+
+</body>
+</html>
