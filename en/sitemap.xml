@@ -2,14 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/tags/base16/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url><url>
-    <loc>/tags/colorscheme/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url><url>
     <loc>/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -21,20 +15,20 @@
                 href="/"
                 />
   </url><url>
-    <loc>/posts/creation-your-own-colorscheme/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <loc>/tags/gaming/</loc>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
   </url><url>
-    <loc>/tags/danqing/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <loc>/tags/nds/</loc>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
   </url><url>
-    <loc>/tags/linux/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <loc>/posts/nds-flash-card-in-2021/</loc>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+    <lastmod>2021-05-30T01:54:27+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
@@ -45,6 +39,21 @@
                 hreflang="en"
                 href="/tags/"
                 />
+  </url><url>
+    <loc>/tags/base16/</loc>
+    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+  </url><url>
+    <loc>/tags/colorscheme/</loc>
+    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+  </url><url>
+    <loc>/posts/creation-your-own-colorscheme/</loc>
+    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+  </url><url>
+    <loc>/tags/danqing/</loc>
+    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
+  </url><url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2020-09-10T20:21:29+08:00</lastmod>
   </url><url>
     <loc>/tags/vim/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
