@@ -5,10 +5,6 @@
     <link>/zh/categories/</link>
     <description>Recent content in Categories on 星空 图册</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="/zh/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="/zh/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

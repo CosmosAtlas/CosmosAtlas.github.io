@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
     <loc>/tags/base16/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/colorscheme/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
     <xhtml:link
@@ -25,29 +20,19 @@
                 hreflang="en"
                 href="/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/creation-your-own-colorscheme/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/danqing/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/linux/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
     <xhtml:link
@@ -60,59 +45,37 @@
                 hreflang="en"
                 href="/tags/"
                 />
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/vim/</loc>
     <lastmod>2020-09-10T20:21:29+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/showcase/</loc>
     <lastmod>2020-08-26T17:54:25+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2020-08-26T17:45:18+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/asciidoc/</loc>
     <lastmod>2020-08-26T16:00:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/asciidoctor/</loc>
     <lastmod>2020-08-26T16:00:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/blog/</loc>
     <lastmod>2020-08-26T16:00:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/hugo/</loc>
     <lastmod>2020-08-26T16:00:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/hugo-with-asciidoc/</loc>
     <lastmod>2020-08-26T16:00:44+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/life/</loc>
     <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/posts/setting-up-a-new-blog/</loc>
     <lastmod>2020-08-25T00:12:06+08:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -125,5 +88,4 @@
                 href="/categories/"
                 />
   </url>
-  
 </urlset>

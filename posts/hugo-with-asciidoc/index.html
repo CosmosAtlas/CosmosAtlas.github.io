@@ -30,7 +30,6 @@ if (!doNotTrack) {
 
 
 
-
 <link rel="stylesheet" href="/css/style.min.css">
 
 
@@ -198,42 +197,42 @@ if (!doNotTrack) {
         <section class="doc-section level-1"><h2 id="_why_asciidoc">Why Asciidoc?<a href="#_why_asciidoc" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2><p><a href="https://asciidoc.org/">Asciidoc</a> is an alternative plain text document format to Markdown. At the every basic level, it provides much more concise control to the document and is more suited for technical writing especially for software documentation.</p>
 <p>Markdown by design, is most suited for writing normal text with easy conversions to HTML. The <a href="https://daringfireball.net/projects/markdown/">original markdown</a> specs is vague and not concise. Many flavors of markdown is extended upon the original markdown syntax.</p>
 <p>Some markdown flavors</p>
-<div class="ulist"><ul><li>GitHub Flavored Markdown (GFM)&#8201;&#8211;&#8201;probably the most popular among programmers due to <em>GitHub</em></li><li>CommonMark&#8201;&#8211;&#8201;An extension with many features</li><li>Pandoc&#8201;&#8211;&#8201;markdown with many extra features to work with the Pandoc document converter</li></ul></div>
-<p>With so many different flavors and variations between different markdown flavors, although being probably the most popular markup language for the web, you can end up with situations where you wish to use a feature that&#8217;s supported by one flavor but not available in the flavor that you have to use. For example, Stack Overflow&#8217;s version of markdown do not support tables extension while most other flavors supports them.</p></section>
-<section class="doc-section level-1"><h2 id="_asciidoc_in_hugo">Asciidoc in Hugo<a href="#_asciidoc_in_hugo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2><p>Hugo&#8217;s supports a variety of content formats out of the box. Different content format rely on different backends. As long as the backend exists on the system, Hugo will do the work automatically. Asciidoc support is done by the package <em>asciidoctor</em> from <em>gem</em>. Not to confuse with the <em>asciidoc</em> package which is planed to be deprecated at the end of 2020 and completely take over by <em>asciidoctor</em>.</p>
-<p>So, how does the support work out of the box? The quick answer is <em>it kind of works</em>. You get something very similar to <em>GitHub</em>'s asciidoc preview and nothing really breaks. The biggest draw back is it doesn&#8217;t have the <em>css</em> setup like what you would get from the default <em>asciidoctor</em> output.</p></section>
+<div class="ulist"><ul><li>GitHub Flavored Markdown (GFM) – probably the most popular among programmers due to <em>GitHub</em></li><li>CommonMark – An extension with many features</li><li>Pandoc – markdown with many extra features to work with the Pandoc document converter</li></ul></div>
+<p>With so many different flavors and variations between different markdown flavors, although being probably the most popular markup language for the web, you can end up with situations where you wish to use a feature that’s supported by one flavor but not available in the flavor that you have to use. For example, Stack Overflow’s version of markdown do not support tables extension while most other flavors supports them.</p></section>
+<section class="doc-section level-1"><h2 id="_asciidoc_in_hugo">Asciidoc in Hugo<a href="#_asciidoc_in_hugo" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2><p>Hugo’s supports a variety of content formats out of the box. Different content format rely on different backends. As long as the backend exists on the system, Hugo will do the work automatically. Asciidoc support is done by the package <em>asciidoctor</em> from <em>gem</em>. Not to confuse with the <em>asciidoc</em> package which is planed to be deprecated at the end of 2020 and completely take over by <em>asciidoctor</em>.</p>
+<p>So, how does the support work out of the box? The quick answer is <em>it kind of works</em>. You get something very similar to <em>GitHub</em>&#39;s asciidoc preview and nothing really breaks. The biggest draw back is it doesn’t have the <em>css</em> setup like what you would get from the default <em>asciidoctor</em> output.</p></section>
 <section class="doc-section level-1"><h2 id="_improvements_for_better_asciidoc_rendering">Improvements for better asciidoc rendering<a href="#_improvements_for_better_asciidoc_rendering" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2><p>Just like most things in the tech world, this problem prabably have being already thought though by someone. Inspired by the following two blog posts, here are some modifications I made to improve my hugo blogging with asciidoc.</p>
 <div class="ulist"><ul><li><a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></li><li><a href="https://foo-dogsquared.github.io/blog/posts/blogging-with-asciidoctor-and-hugo/">Blogging with Asciidoctor and Hugo</a></li></ul></div>
-<section class="doc-section level-2"><h3 id="_html_output_from_asciidoctor">HTML output from <em>asciidoctor</em><a href="#_html_output_from_asciidoctor" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>The default <em>asciidoctor</em> HTML output is not ideal in many situations. Most importantly it&#8217;s not semantic so it&#8217;s hard to parse by person. (Meanwhile why would you?) An extension in <em>gem</em> for <em>asciidoctor</em> called <code>asciidoctor-html5s</code> fixes this issue. So calling <em>asciidoctor</em> with the correct argument would provide you with better HTML outputs.</p>
+<section class="doc-section level-2"><h3 id="_html_output_from_asciidoctor">HTML output from <em>asciidoctor</em><a href="#_html_output_from_asciidoctor" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>The default <em>asciidoctor</em> HTML output is not ideal in many situations. Most importantly it’s not semantic so it’s hard to parse by person. (Meanwhile why would you?) An extension in <em>gem</em> for <em>asciidoctor</em> called <code>asciidoctor-html5s</code> fixes this issue. So calling <em>asciidoctor</em> with the correct argument would provide you with better HTML outputs.</p>
 <div class="listing-block"><pre class="highlight"><code class="language-sh" data-lang="sh">asciidoctor -r asciidoctor-html5s -b html5s example.adoc</code></pre></div>
-<p>However, there&#8217;s a catch to Hugo. Hugo hardcodes calling <em>asciidoctor</em> with fixed arguments in its source code. Modifying the source code definitely fix it, but on <em>*NIX</em> systems you can overrite the <code>asciidoctor</code> command with the arguments built in.</p>
+<p>However, there’s a catch to Hugo. Hugo hardcodes calling <em>asciidoctor</em> with fixed arguments in its source code. Modifying the source code definitely fix it, but on <em>*NIX</em> systems you can overrite the <code>asciidoctor</code> command with the arguments built in.</p>
 <p>One way to do it is to save a file called <code>asciidoctor</code> at the root of the Hugo directory</p>
 <div class="listing-block"><pre class="highlight"><code class="language-bash" data-lang="bash">#!/bin/sh
-/usr/bin/asciidoctor -r asciidoctor-html5s -b html5s "$@"</code></pre></div>
+/usr/bin/asciidoctor -r asciidoctor-html5s -b html5s &#34;$@&#34;</code></pre></div>
 <p>replace <code>/usr/bin/asciidoctor</code> to where your <code>asciidoctor</code> bin file is located on your system</p>
 <aside class="admonition-block note" role="note"><h6 class="block-title label-only"><span class="title-label">Note: </span></h6><p>Remember to make the file executable by <code>chmod +x ./asciidoctor</code></p></aside>
 <p>Then execute Hugo with</p>
 <div class="listing-block"><pre class="highlight"><code class="language-sh" data-lang="sh">PATH=$PWD:$PATH hugo server -D</code></pre></div>
 <p>So Hugo will use our own customized version.</p></section>
-<section class="doc-section level-2"><h3 id="_better_admonitions">Better admonitions<a href="#_better_admonitions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>If you previewed your asciidoc file before and after using the <code>asciioctor-html5s</code> extension. You&#8217;ll notice the admonition have changed. Before it looks like a 1x2 table (I believe that how <em>GitHub</em> 'translates' admonitions) with the admonition text on the left and the content on the right. Now it just look like a header followed by a paragraph. This is definitely not ideal. We need to fix that.</p>
+<section class="doc-section level-2"><h3 id="_better_admonitions">Better admonitions<a href="#_better_admonitions" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>If you previewed your asciidoc file before and after using the <code>asciioctor-html5s</code> extension. You’ll notice the admonition have changed. Before it looks like a 1x2 table (I believe that how <em>GitHub</em> &#39;translates&#39; admonitions) with the admonition text on the left and the content on the right. Now it just look like a header followed by a paragraph. This is definitely not ideal. We need to fix that.</p>
 <p>Credit: <a href="https://blog.anoff.io/2019-02-17-hugo-render-asciidoc/">Get Hugo to render (nice) Asciidocs</a></p>
 <div class="listing-block"><pre class="highlight"><code class="language-javascript" data-lang="javascript">// replace the default admonitions block with one that looks like the antora output to apply similar styling via adoc.css
-window.addEventListener('load', function () {
-  const admonitions = document.getElementsByClassName('admonition-block')
+window.addEventListener(&#39;load&#39;, function () {
+  const admonitions = document.getElementsByClassName(&#39;admonition-block&#39;)
   for (let i = admonitions.length - 1; i &gt;= 0; i--) {
     const elm = admonitions[i]
     const type = elm.classList[1]
-    const text = elm.getElementsByTagName('p')[0].innerHTML
+    const text = elm.getElementsByTagName(&#39;p&#39;)[0].innerHTML
     const parent = elm.parentNode
-    const tempDiv = document.createElement('div')
-    tempDiv.innerHTML = `&lt;div class="admonitionblock ${type}"&gt;
+    const tempDiv = document.createElement(&#39;div&#39;)
+    tempDiv.innerHTML = `&lt;div class=&#34;admonitionblock ${type}&#34;&gt;
     &lt;table&gt;
       &lt;tbody&gt;
         &lt;tr&gt;
-          &lt;td class="icon"&gt;
-            &lt;i class="fa icon-${type}" title="${type}"&gt;&lt;/i&gt;
+          &lt;td class=&#34;icon&#34;&gt;
+            &lt;i class=&#34;fa icon-${type}&#34; title=&#34;${type}&#34;&gt;&lt;/i&gt;
           &lt;/td&gt;
-          &lt;td class="content"&gt;
+          &lt;td class=&#34;content&#34;&gt;
             ${text}
           &lt;/td&gt;
         &lt;/tr&gt;
@@ -246,11 +245,11 @@ window.addEventListener('load', function () {
   }
 })</code></pre></div>
 <p>Now we get our admonitions behave like before.</p></section>
-<section class="doc-section level-2"><h3 id="_verdict">Verdict<a href="#_verdict" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>You&#8217;ll probably noticed by now, this blog post have some <em>none markdown</em> features such as the admonition block earlier. In fact, this blog is written in asciidoc and I&#8217;ve tweaked my Hugo config files with the fixes above and adjusted some aesthetics.</p>
-<p>So what are my final thoughts on using asciidoc? After some experimenting with asciidoc rendering with Hugo and applying changes and fixes found around the web. I came to the realization that in order to have nicely lookly asciidoc HTML rendered by Hugo, I&#8217;ll need to write a long <em>css</em> file to customize the hell out of it.</p>
+<section class="doc-section level-2"><h3 id="_verdict">Verdict<a href="#_verdict" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h3><p>You’ll probably noticed by now, this blog post have some <em>none markdown</em> features such as the admonition block earlier. In fact, this blog is written in asciidoc and I’ve tweaked my Hugo config files with the fixes above and adjusted some aesthetics.</p>
+<p>So what are my final thoughts on using asciidoc? After some experimenting with asciidoc rendering with Hugo and applying changes and fixes found around the web. I came to the realization that in order to have nicely lookly asciidoc HTML rendered by Hugo, I’ll need to write a long <em>css</em> file to customize the hell out of it.</p>
 <p>Someone have already created a theme for Hugo that is intended to support asciidoc nicely.</p>
 <div class="ulist"><ul><li><a href="https://github.com/foo-dogsquared/hugo-theme-arch-terminal">hugo-theme-arch-terminal</a></li></ul></div>
-<p>For me afterall, I think I&#8217;ll stick with markdown for writing my blog at the moment. Maybe one day I&#8217;ll be interested in designing my own blogging theme, by then I&#8217;ll reconsider using asciidoc to write my blog.</p></section></section>
+<p>For me afterall, I think I’ll stick with markdown for writing my blog at the moment. Maybe one day I’ll be interested in designing my own blogging theme, by then I’ll reconsider using asciidoc to write my blog.</p></section></section>
 
       </div></div>
 

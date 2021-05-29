@@ -1,5 +1,5 @@
 (() => {
-  // app.js
+  // <stdin>
   window.addEventListener("load", function() {
     const admonitions = document.getElementsByClassName("admonition-block");
     for (let i = admonitions.length - 1; i >= 0; i--) {
